@@ -143,5 +143,6 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     extracted = page_extractor(args.input_image)
-    cv2.imshow("Extracted page", extracted)
-    cv2.waitKey(0)
+    cv2.imwrite('extracted.jpg', extracted)
+    # cv2.imshow("Extracted page", extracted)
+    # cv2.waitKey(0)
